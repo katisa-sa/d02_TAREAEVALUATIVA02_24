@@ -1,0 +1,12 @@
+<app-header-tab titulo="Página 5"></app-header-tab>
+
+<ion-content [fullscreen]="true">
+  <ion-list *ngFor="let it of listaImagenes">
+    <ion-item href="'https://' + {{it.url}}" target="_blank" style="height: 25%;">
+      <ion-img src="assets/img/{{it.imagen}}" class="ion-padding"></ion-img>
+    </ion-item>
+  </ion-list>
+  <ion-list style="height: 25%;">
+    <app-explore-container name="Tab 5"></app-explore-container>
+  </ion-list>
+</ion-content>
