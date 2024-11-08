@@ -1,0 +1,9 @@
+<app-header-tab titulo="Tab 5"></app-header-tab>
+
+<ion-content [fullscreen]="true">
+  <ion-list *ngFor="let it of valoresLista">
+    <ion-item [href]="'https://' + it.url">
+      <ion-img [src]="'./assets/img/'+ it.imagen"></ion-img>
+    </ion-item>   
+  </ion-list>
+</ion-content>

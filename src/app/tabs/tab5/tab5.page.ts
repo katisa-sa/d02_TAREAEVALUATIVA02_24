@@ -13,7 +13,7 @@ interface IValor {
 
 export class Tab5Page implements OnInit {
 
-  listaImagenes: IValor[] = [
+  valoresLista: IValor[] = [
     {
       imagen: "BIRT_LOGO.png",
       url: "birt.eus",
@@ -30,10 +30,12 @@ export class Tab5Page implements OnInit {
       imagen: "ciudad_jardin_logo.png",
       url: "ciudadjardin.hezkuntza.net",
     }
+
   ];
-  
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
+
 }

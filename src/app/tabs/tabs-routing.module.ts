@@ -17,7 +17,7 @@ const routes: Routes = [
       },
       {
         path: 'ayuda',
-        loadChildren: () => import('./ayuda.module').then(m => m.AyudaPageModule)
+        loadChildren: () => import('./ayuda/ayuda.module').then(m => m.AyudaPageModule)
       },
       {
         path: 'tab4',
@@ -26,6 +26,10 @@ const routes: Routes = [
       {
         path: 'tab5',
         loadChildren: () => import('./tab5/tab5.module').then(m => m.Tab5PageModule)
+      },
+      {
+        path: 'tab6',
+        loadChildren: () => import('./tab6/tab6.module').then( m => m.Tab6PageModule)
       },
       {
         path: '',

@@ -1,14 +1,16 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header-tab',
   templateUrl: './header-tab.component.html',
   styleUrls: ['./header-tab.component.scss'],
 })
-export class HeaderTabComponent   {
-
-  @Input() titulo: string = "";
+export class HeaderTabComponent  implements OnInit {
 
   constructor() { }
+
+  ngOnInit() {}
+
+  @Input() titulo: string = "";
 
 }

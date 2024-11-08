@@ -1,18 +1,20 @@
-import { ExploreContainerComponent } from 'src/app/shared/componentes/explore-container/explore-container.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderTabComponent } from './header-tab/header-tab.component';
 import { IonicModule } from '@ionic/angular';
+
+import { HeaderTabComponent } from './header-tab/header-tab.component';
+import { ExploreContainerComponent } from './explore-container/explore-container.component';
 
 
 
 @NgModule({
+  //Declaramos todos los componentes que están dentro de este módulo
   declarations: [HeaderTabComponent, ExploreContainerComponent],
   imports: [
-    CommonModule,
     IonicModule
   ],
-  exports: [
+  //Declaramos los componentes que queremos exportar para que otros módulos los puedan utilizar
+  exports:[
     HeaderTabComponent,
     ExploreContainerComponent
   ]

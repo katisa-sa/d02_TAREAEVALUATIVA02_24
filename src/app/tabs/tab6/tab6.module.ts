@@ -1,14 +1,13 @@
-
+import { ComponentesModule } from './../../shared/componentes.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Tab5PageRoutingModule } from './tab5-routing.module';
+import { Tab6PageRoutingModule } from './tab6-routing.module';
 
-import { Tab5Page } from './tab5.page';
-import { ComponentesModule } from '../shared/componentes/componentes.module';
+import { Tab6Page } from './tab6.page';
 
 
 @NgModule({
@@ -16,9 +15,9 @@ import { ComponentesModule } from '../shared/componentes/componentes.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    Tab5PageRoutingModule,
+    Tab6PageRoutingModule,
     ComponentesModule
   ],
-  declarations: [Tab5Page]
+  declarations: [Tab6Page]
 })
-export class Tab5PageModule {}
+export class Tab6PageModule {}
