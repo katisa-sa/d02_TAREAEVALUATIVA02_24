@@ -1,20 +1,20 @@
-import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab3Page } from './tab3.page';
+import { IonicModule } from '@ionic/angular';
 
-import { Tab3PageRoutingModule } from './tab3-routing.module';
+import { AyudaPageRoutingModule } from './ayuda-routing.module';
+import { AyudaPage } from './ayuda.page';
 import { ComponentesModule } from '../shared/componentes/componentes.module';
 
 @NgModule({
   imports: [
-    IonicModule,
     CommonModule,
     FormsModule,
-    Tab3PageRoutingModule,
+    IonicModule,
+    AyudaPageRoutingModule,
     ComponentesModule
   ],
-  declarations: [Tab3Page]
+  declarations: [AyudaPage]
 })
-export class Tab3PageModule {}
+export class AyudaPageModule {}
